@@ -1,0 +1,704 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 微软雅黑;
+}
+
+.border{
+    border: 1px red solid;
+}
+
+.x_y_center{
+    align-items: center;
+    justify-content: center;
+}
+
+#contain{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.items_hr{
+     border: none;
+     border-top:1px #8a8a8a solid;
+     width:90% ;
+     margin: 0 auto;
+ }
+.content_hr{
+    border: none;
+    border-top:1px #DCD9D8 solid;
+    width:100% ;
+    margin-left: 20px;
+}
+
+.dispaly_none{
+    display: none;
+}
+
+#content{
+    background-color: #DCD9D8;
+    flex: 1;
+    overflow: scroll;
+    overflow-x:hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+#content_research{
+    height: 60px;
+    display: flex;
+}
+.content_items{
+     height: 60px;
+     display: flex;
+     background-color: whitesmoke;
+ }
+
+#research{
+    width: 94%;
+    height: 36px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    display: flex;
+}
+#research_left{
+    flex: 1;
+}
+#research_center{
+    width: 80px;
+    height:30px;
+    display: flex;
+}
+#maganify{
+    width: 18px ;
+    height: 18px;
+    background-image: url(../resourse/img/放大镜.svg);
+    background-position: center;
+    background-size: contain;
+    margin-right: 4px;
+}
+#research_text{
+    font-size: 14px;
+    font-weight: 500;
+    color: gray;
+}
+#research_right{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+}
+#research_voice{
+    width: 18px ;
+    height: 18px;
+    background-image: url(../resourse/img/麦克风.svg);
+    background-position: center;
+    background-size: contain;
+    margin-right: 4px;
+}
+
+.person_img{
+    width: 46px;
+    height: 46px;
+    margin-left: 8px;
+    background-size: cover;
+    background-position: center;
+}
+.content_items_right{
+    flex: 1;
+    height:46px;
+    margin-right: 8px;
+}
+.content_items_right_up{
+    height: 23px;
+    display: flex;
+}
+.content_items_right_up_nickname{
+    height: 16px;
+    margin-left: 4px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    flex: 1;
+}
+.content_items_right_up_time{
+    height: 16px;
+    width: 70px;
+    font-size: 8px;
+    text-align: right;
+    color: #8a8a8a;
+    line-height: 16px;
+
+
+}
+.content_items_right_down{
+    height: 23px;
+    display: flex;
+}
+.content_items_right_down_msg{
+     height: 23px;
+     width: 250px;
+     color: #8a8a8a;
+     margin-left: 4px;
+     font-size: 13px;
+
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     overflow: hidden;
+ }
+.content_items_right_down_voice{
+    height: 23px;
+    width: 250px;
+    color: crimson;
+    margin-left: 4px;
+    font-size: 13px;
+}
+.content_items_right_down_silence{
+    height: 16px;
+    flex: 1;
+}
+
+.discover_content_items{
+    height: 44px;
+    display: flex;
+    background-color: whitesmoke;
+}
+.discover_content_div_1{
+    height: 44px;
+    margin: 16px 0px;
+}
+.discover_content_div_2{
+    height: 88px;
+    margin-bottom: 16px;
+}
+.discover_content_items_l{
+    flex: 1;
+    display: flex;
+}
+.discover_content_items_r{
+    flex: 1;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+.discover_content_items_l_icon{
+    width: 24px;
+    height: 24px;
+    margin:0px 10px;
+    background-position: center;
+    background-size: cover;
+}
+.discover_content_items_l_text{
+    height: 24px;
+    line-height: 24px;
+    flex: 1;
+}
+.discover_content_items_r_text{
+    text-align: right;
+    height: 16px;
+    line-height: 16px;
+    font-size: 8px;
+    flex: 1;
+}
+.discover_content_items_r_icon_point{
+    width: 8px;
+    height: 8px;
+    background-color: crimson;
+    border-radius: 50%;
+    position: relative;
+    left: 36px;
+    bottom: 10px;
+}
+.discover_content_items_r_icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    background-image: url(../resourse/img/前进号.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.me_content_div_mypage{
+
+}
+#me_content_mypage{
+    height: 100px;
+    background-color: whitesmoke;
+    margin: 16px 0px 0px 0px;
+    display: flex;
+}
+#me_mypage_l{
+    height:70px ;
+    width: 70px;
+    border-radius: 10px;
+    margin:0px 10px;
+    background-size: cover;
+    background-position: center;
+}
+#me_mypage_center{
+    flex: 1;
+    height: 70px;
+    display: flex;
+    flex-flow: column;
+}
+#me_mypage_center_up{
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+}
+#me_mypage_center_down{
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+}
+#me_mypage_r{
+    width: 70px;
+}
+#me_mypage_2codeimg{
+    height: 24px;
+    width: 24px;
+    margin-right: 4px;
+    background-image: url(../resourse/img/二维码.svg);
+    background-position: center;
+    background-size: cover;
+}
+.me_content_div_1{
+    height: 44px;
+    margin: 16px 0px 0px 0px;
+}
+.me_content_div_4{
+    height: 176px;
+    margin: 16px 0px 0px 0px;
+}
+
+.communication{
+    height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+}
+.communication_img{
+    height: 34px;
+    width: 34px;
+    border-radius: 4px;
+    margin: 0 8px;
+    background-size: cover;
+    background-position: center;
+}
+.communication_nickname{
+    height: 26px;
+    line-height: 26px;
+    font-size: 18px;
+    flex: 1;
+}
+.abc{
+    font-size: 10px;
+
+}
+
+#detail_mypage_center_up{
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+#detail_mypage_center_center{
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8a8a;
+}
+#detail_mypage_center_down{
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8a8a8a;
+}
+#detail_3{
+    height: 176px;
+}
+#detail_3_center{
+    height: 88px;
+    background-color: whitesmoke;
+    display: flex;
+}
+.detail_3_center_pic{
+    width: 54px;
+    height: 54px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+}
+#detail_btn_1{
+    height: 34px;
+    width: 80%;
+    background-color: green;
+    color: #ebedf4;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+#detail_btn_2{
+    height: 34px;
+    width: 80%;
+    background-color: whitesmoke;
+    color: #212121;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+
+#py_cricle_img{
+    height: 220px;
+    background-image: url(../resourse/img/py圈背景图.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#py_cricle_img_nickname{
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+    right: 30px;
+}
+#py_cricle_img_pic{
+    height: 70px;
+    width: 70px;
+    background-image: url(../resourse/img/我的微信头像.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px whitesmoke solid;
+    position: relative;
+    top: 26px;
+    right: 10px;
+}
+
+.py_cricle_msg{
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+}
+.py_cricle_msg_l{
+    height: 100%;
+    width: 80px;
+}
+.py_cricle_friends_pic{
+    width: 40px;
+    height: 40px;
+    margin: 16px 0px 0px 16px;
+    background-size: cover;
+    background-position: center;
+}
+.py_cricle_msg_r{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.py_cricle_friends_name{
+    height: 20px;
+    margin-top: 10px;
+    color: dodgerblue;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.py_cricle_friends_msg{
+    height: 20px;
+    width: 260px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #212121;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    flex: 1;
+}
+.py_cricle_friends_down{
+    height: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.py_cricle_friends_time{
+    font-size: 8px;
+    color: gray;
+}
+.py_cricle_friends_talk{
+    height: 18px;
+    width: 18px;
+    background-image: url(../resourse/img/评论.svg);
+    background-position: center;
+    background-size: cover;
+    margin-right: 8px;
+}
+
+.py_cricle_msg_r{
+    height: 80px;
+    margin-top: 10px;
+    display: flex;
+}
+.py_cricle_msgAndpic_r{
+    height: 180px;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column;
+}
+.py_cricle_friends_msg_pic{
+    flex: 1;
+    width:200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.py_cricle_msgAndpic{
+    height: 180px;
+    display: flex;
+}
+.py_cricle_msgAndpic_r{
+    flex: 1;
+}
+
+#menu{
+    height: 70px;
+    background: #EEEBE8;
+    border-top: #bfbfbf 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_box{
+    height: 50px;
+    width: 48px;
+}
+
+.menu_icon{
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    margin-left: 10px;
+}
+
+.menu_title{
+    height: 20px;
+    width: 48px;
+    color:#2c2c2c;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#signal{
+    height: 32px;
+    background: #212121;
+    font-size: 12px;
+    font-weight: 300;
+    color: #ebedf4;
+    display: flex;
+
+    justify-content: space-between;
+}
+/*左边*/
+#signal_left{
+    height: 30px;
+    flex: 1;
+    display: flex;
+}
+#signal_left>div{
+    margin-left: 6px;
+}
+#signal_area{
+    width: 25px;
+    height: 27px;
+    display: flex;
+    align-items: flex-end;
+}
+.signal_area_sig{
+    background-color: whitesmoke;
+    width: 4px;
+    margin-left: 2px;
+    border-radius: 2px;
+}
+.sig_lost{
+    background-color: #8a8a8a;
+}
+.signal_area_sig:nth-child(1){
+    height: 8px;
+}
+.signal_area_sig:nth-child(2){
+    height: 12px;
+}
+.signal_area_sig:nth-child(3){
+    height: 15px;
+}
+.signal_area_sig:nth-child(4){
+    height: 18px;
+}
+#operator{
+    line-height: 32px;
+
+}
+#xg{
+    line-height: 32px;
+    width: 20px;
+    padding-left: 3px;
+}
+/*左边结束*/
+
+
+
+#signal_center{
+    height: 32px;
+    width: 80px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+
+/*右边*/
+#signal_right{
+    height: 32px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#signal_right>div{
+    margin-right: 3px;
+}
+
+#percent_99{
+
+    line-height: 32px;
+}
+#battery{
+    height: 14px;
+    width: 40px;
+    display: flex;
+}
+#battery_body{
+    border: 1px whitesmoke solid;
+    border-radius: 4px;
+    height: 14px;
+    width: 30px;
+}
+#battery_inside{
+    border-radius: 1px;
+    height: 10px;
+    width: 22px;
+    margin: 2px;
+    background-color: forestgreen;
+}
+#battery_head{
+    height: 6px;
+    width: 2px;
+    background-color: whitesmoke;
+    border-radius: 0px 2px 2px 0px;
+}
+
+
+/*右边结束*/
+
+#title{
+    background: #212121;
+    height: 48px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ebedf4;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+#title_left{
+    height:40px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#title_left_back_img{
+    height: 22px;
+    width: 22px;
+    margin-left: 6px;
+    background-image: url(../resourse/img/返回.svg);
+    background-size: cover;
+    background-position: center;
+}
+#title_left_back{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+#title_center{
+    height: 40px;
+    width: 100px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#title_right{
+    height:40px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#title_right_icon{
+    height: 22px;
+    width: 22px;
+    margin-right: 15px;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+#title_add_menu{
+    position: absolute;
+    top: 90px;
+    right: 8px;
+    height: 140px;
+    width: 130px;
+    background-color: #26292E;
+
+}
+
+.title_add_menu_items{
+    height: 34px;
+    display: flex;
+
+}
+
+.title_add_menu_items_left{
+    width: 20px;
+    height: 20px;
+    margin-left: 14px;
+    background-size: cover;
+    background-position: center;
+}
+.title_add_menu_items_right{
+    height: 24px;
+    flex: 1;
+    line-height: 24px;
+    font-size: 16px;
+    margin-left: 14px;
+}
